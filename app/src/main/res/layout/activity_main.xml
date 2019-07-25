@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+tools:context=".MainActivity"
+    android:layout_gravity="center_vertical">
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="35dp"
+
+        android:background="@drawable/shape"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Email/Username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="35dp"
+        android:alpha="0.9"
+        android:background="@drawable/shape"
+        android:drawableLeft="@drawable/key"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="Password"
+
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/valuess"
+        android:text="Login"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbRemember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:text="Remember me" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="35dp"
+            android:gravity="right"
+            android:text="Forgot password?"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="Login with Account"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/ivFacebook"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="100dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/facebookround" />
+
+        <ImageView
+            android:id="@+id/ivGoogle"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="35dp"
+
+            android:clickable="true"
+            app:srcCompat="@drawable/googleplus" />
+
+        <ImageView
+            android:id="@+id/ivTwitter"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="35dp"
+
+            android:clickable="true"
+            app:srcCompat="@drawable/twitter" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/getTe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="2"
+            android:gravity="right|center_horizontal"
+            android:text="Don't have an account?"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSign"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="start|center_horizontal"
+            android:text="Sign up"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
